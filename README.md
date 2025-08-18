@@ -43,6 +43,17 @@ sudo yum install httpd -y
 sudo systemctl start httpd
 sudo systemctl enable httpd
 ```
+✅ Test by opening http://<Public-IP> → you should see Apache Test Page.
+
 ### Step 4: Create Project Folder & Structure
 
+Run these commands inside your EC2 instance:  
 
+```bash
+cd /var/www/html
+sudo mkdir project
+cd project
+sudo mkdir css images
+ls -R
+```
+### Step 5: 
