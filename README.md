@@ -53,9 +53,15 @@ Run these commands inside your EC2 instance:
 ```bash
 cd /var/www/html
 ```
+- Make a New Project Folder & two sub-folders
+```
 sudo mkdir project
 cd project
 sudo mkdir css images
+```
+- Create Homepage
+```
+sudo nano index.html
 ls -R
 ```
 ### Step 5: 
