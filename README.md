@@ -59,9 +59,28 @@ sudo mkdir project
 cd project
 sudo mkdir css images
 ```
-- Create Homepage
+- Create Homepage & Aboutpage
 ```
 sudo nano index.html
+sudo nano about.html
+```
+"Write your HTML code here"
+```
+- Add the CSS (style file)
+```
+cd css
+sudo nano style.css
+```
+"Write your CSS code here"
+- Add a Dummy image file
+```
+cd ../images
+sudo touch logo.png
+```
+- Go back to project folder and check structure
+```
+cd ..
 ls -R
 ```
+- This will show all folders and files inside your project folder.
 ### Step 5: 
