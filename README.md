@@ -36,7 +36,7 @@
 
 ### Step 3: Install Apache Web Server  
 Run these commands inside your EC2 instance:  
-
+```bash
 sudo yum update -y
 sudo yum install httpd -y
 sudo systemctl start httpd
