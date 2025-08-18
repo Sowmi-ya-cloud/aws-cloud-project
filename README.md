@@ -31,8 +31,8 @@
 
 ### Step 2: Connect to EC2 Instance
 
-1. Go to EC2 → Instances and select your instance.
-2. Click Connect → Now you are inside your EC2 server (terminal).
+1.Go to EC2 → Instances and select your instance.
+2.Click Connect → Now you are inside your EC2 server (terminal).
 
 ### Step 3: Install Apache Web Server  
 Run these commands inside your EC2 instance:  
