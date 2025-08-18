@@ -18,24 +18,23 @@
 
 ### Step 1: Launch EC2 Instance
 
-1.Login to AWS Management Console → Go to EC2 → Launch instance.
+ 1.Login to AWS Management Console → Go to EC2 → Launch instance.
 
-2.Select AMI, choose free-tier instance type (t2.micro), create a new Key Pair.
+ 2.Select AMI, choose free-tier instance type (t2.micro), create a new Key Pair.
 
-3.Configure Security Group:  
+ 3.Configure Security Group:  
    - Allow SSH (22) → Connect instance from terminal.  
    - Allow HTTP (80) → Public website access.
      
-4.Click Launch Instance.  
-
+ 4.Click Launch Instance.  
 
 ### Step 2: Connect to EC2 Instance
 
-1.Go to EC2 → Instances and select your instance.
-2.Click Connect → Now you are inside your EC2 server (terminal).
+ 1.Go to EC2 → Instances and select your instance.
+ 2.Click Connect → Now you are inside your EC2 server (terminal).
 
 ### Step 3: Install Apache Web Server 
-Run these commands inside your EC2 instance:  
+ Run these commands inside your EC2 instance:  
 
 ```bash
 sudo yum update -y
@@ -85,7 +84,7 @@ ls -R
 ```
  ✅ This will show all folders and files inside your project folder.
 
-## 📊 Results 
+ ## 📊 Results 
 
   - Open in Browser
 ```
@@ -101,4 +100,4 @@ http://<your-public-ip>/project/index.html
 
         • About Us link
 
-     • Fake image (broken logo is fine)
+        • Fake image (broken logo is fine)
