@@ -42,4 +42,8 @@ sudo yum install httpd -y
 sudo systemctl start httpd
 sudo systemctl enable httpd
 
+### Step 4: Create Project Folder & Structure
+
+
+
 
