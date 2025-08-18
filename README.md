@@ -64,14 +64,15 @@ sudo mkdir css images
 sudo nano index.html
 sudo nano about.html
 ```
-"Write your HTML code here"
-```
+"write your HTML code here"
+
 - Add the CSS (style file)
 ```
 cd css
 sudo nano style.css
 ```
 "Write your CSS code here"
+
 - Add a Dummy image file
 ```
 cd ../images
@@ -83,4 +84,5 @@ cd ..
 ls -R
 ```
 - This will show all folders and files inside your project folder.
+- 
 ### Step 5: 
