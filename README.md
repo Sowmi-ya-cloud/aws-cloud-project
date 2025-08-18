@@ -102,3 +102,16 @@ http://<your-public-ip>/project/index.html
         • About Us link
 
         • Fake image (broken logo is fine)
+  ## 🧹 Cleanup Instructions
+
+   1.After testing, stop or terminate the EC2 instance to avoid charges
+   
+   2.Go to EC2 → Instances → Select instance → Instance state → Stop/Terminate.
+
+  ## 📝 Reflection
+
+     - I Learned how to host a static website on AWS EC2 using Apache.
+
+     - Faced small issues with file permissions (fixed using sudo).
+
+     - Improved understanding of folder structure (HTML, CSS, Images).
