@@ -85,7 +85,9 @@ ls -R
 ```
 ✅ This will show all folders and files inside your project folder.
 
-### Step 5: Open in Browser
+## 📊 Results 
+
+- Open in Browser
 ```
 http://<your-public-ip>/project/index.html
 ```
