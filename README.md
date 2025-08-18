@@ -49,8 +49,10 @@ sudo systemctl enable httpd
 
 Run these commands inside your EC2 instance:  
 
+- Go to apache's default folder
 ```bash
 cd /var/www/html
+```
 sudo mkdir project
 cd project
 sudo mkdir css images
