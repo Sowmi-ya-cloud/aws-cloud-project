@@ -25,7 +25,6 @@
 3.Configure Security Group:
 
      •	Allow SSH 22 – for connecting to instance via terminal.
-
      •	Allow HTTP 80 – for public access to website.
 
 4.Click Launch Instance.
