@@ -22,12 +22,11 @@
 
 2.Select AMI, choose free-tier instance type (t2.micro), create a new Key Pair.
 
-3.Configure Security Group:
+3 Configure Security Group:  
+   - Allow SSH (22) → Connect instance from terminal.  
+   - Allow HTTP (80) → Public website access.  
+5. Click Launch Instance.  
 
-     •	Allow SSH 22 – for connecting to instance via terminal.
-     •	Allow HTTP 80 – for public access to website.
-     
-4.Click Launch Instance.
 
 ### Step 2: Connect to EC2 Instance
 
