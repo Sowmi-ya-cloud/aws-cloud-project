@@ -49,56 +49,56 @@ sudo systemctl enable httpd
 
 Run these commands inside your EC2 instance:  
 
-- Go to apache's default folder
+  - Go to apache's default folder
 ```bash
 cd /var/www/html
 ```
-- Make a New Project Folder & two sub-folders
+  - Make a New Project Folder & two sub-folders
 ```
 sudo mkdir project
 cd project
 sudo mkdir css images
 ```
-- Create Homepage & Aboutpage
+  - Create Homepage & Aboutpage
 ```
 sudo nano index.html
 sudo nano about.html
 ```
-"write your HTML code here"
+  "write your HTML code here"
 
 - Add the CSS (style file)
 ```
 cd css
 sudo nano style.css
 ```
-"Write your CSS code here"
+  "write your CSS code here"
 
-- Add a Dummy image file
+  - Add a Dummy image file
 ```
 cd ../images
 sudo touch logo.png
 ```
-- Go back to project folder and check structure
+  - Go back to project folder and check structure
 ```
 cd ..
 ls -R
 ```
-✅ This will show all folders and files inside your project folder.
+ ✅ This will show all folders and files inside your project folder.
 
 ## 📊 Results 
 
-- Open in Browser
+  - Open in Browser
 ```
 http://<your-public-ip>/project/index.html
 ```
-👉 Public IP is shown below the terminal in your EC2 instance page.
+  👉 Public IP is shown below the terminal in your EC2 instance page.
 
-- Your homepage should load with:
+  - Your homepage should load with:
   
-     • Blue background
+        • Blue background
 
-     • Heading
+        • Heading
 
-     • About Us link
+        • About Us link
 
      • Fake image (broken logo is fine)
