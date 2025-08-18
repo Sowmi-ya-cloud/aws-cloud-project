@@ -83,6 +83,6 @@ sudo touch logo.png
 cd ..
 ls -R
 ```
-- This will show all folders and files inside your project folder.
-- 
+ This will show all folders and files inside your project folder.
+
 ### Step 5: 
