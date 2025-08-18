@@ -34,7 +34,7 @@
 1.Go to EC2 → Instances and select your instance.
 2.Click Connect → Now you are inside your EC2 server (terminal).
 
-### Step 3: Install Apache Web Server  
+### Step 3: Install Apache Web Server 
 Run these commands inside your EC2 instance:  
 ```bash
 sudo yum update -y
@@ -43,3 +43,5 @@ sudo systemctl start httpd
 sudo systemctl enable httpd
 
 ### Step 4: Create Project Folder & Structure
+
+
