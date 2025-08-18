@@ -45,7 +45,7 @@ sudo systemctl enable httpd
 ```
 ✅ Test by opening http://<Public-IP> → you should see Apache Test Page.
 
-### Step 4: Create Project Folder & Structure
+### Step 4: Setup Project (Folders, HTML, CSS, Images)
 
 Run these commands inside your EC2 instance:  
 
