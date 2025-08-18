@@ -85,4 +85,8 @@ ls -R
 ```
 ✅ This will show all folders and files inside your project folder.
 
-### Step 5: 
+### Step 5: Open in Browser
+```
+http://<your-public-ip>/project/index.html
+```
+👉 Public IP is shown below the terminal in your EC2 instance page.
