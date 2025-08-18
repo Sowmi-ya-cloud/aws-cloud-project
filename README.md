@@ -19,13 +19,15 @@
 ### Step 1: Launch EC2 Instance
 
 1.Login to AWS Management Console → Go to EC2 → Launch instance.
-
 2.Select AMI, choose free-tier instance type (t2.micro), create a new Key Pair.
-
 3.Configure Security Group:
-
      •	Allow SSH 22 – for connecting to instance via terminal.
      •	Allow HTTP 80 – for public access to website.
-
 4.Click Launch Instance.
+
+### Step 2: Connect to EC2 Instance
+
+1. Go to EC2 → Instances and select your instance.
+2. Click Connect → Now you are inside your EC2 server (terminal).
+
 
