@@ -110,8 +110,8 @@ http://<your-public-ip>/project/index.html
 
   ## 📝 Reflection
 
-     - I Learned how to host a static website on AWS EC2 using Apache.
+    - I Learned how to host a static website on AWS EC2 using Apache.
 
-     - Faced small issues with file permissions (fixed using sudo).
+    - Faced small issues with file permissions (fixed using sudo).
 
-     - Improved understanding of folder structure (HTML, CSS, Images).
+    - Improved understanding of folder structure (HTML, CSS, Images).
