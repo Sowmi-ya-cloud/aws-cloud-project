@@ -93,8 +93,12 @@ http://<your-public-ip>/project/index.html
 ```
 👉 Public IP is shown below the terminal in your EC2 instance page.
 
--  Your homepage should load with:
-• Blue background
-• Heading
-• About Us link
-• Fake image (broken logo is fine)
+- Your homepage should load with:
+  
+     • Blue background
+
+     • Heading
+
+     • About Us link
+
+     • Fake image (broken logo is fine)
