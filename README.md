@@ -23,6 +23,7 @@
 2.Select AMI, choose free-tier instance type (t2.micro), create a new Key Pair.
 
 3.Configure Security Group:
+
      •	Allow SSH 22 – for connecting to instance via terminal.
      •	Allow HTTP 80 – for public access to website.
      
@@ -32,5 +33,18 @@
 
 1. Go to EC2 → Instances and select your instance.
 2. Click Connect → Now you are inside your EC2 server (terminal).
+
+### Step 3: Install Apache Web Server
+
+Run these commands inside your EC2 instance:  
+
+### Step 3: Install Apache Web Server  
+Run these commands inside your EC2 instance:  
+
+```bash
+sudo yum update -y
+sudo yum install httpd -y
+sudo systemctl start httpd
+sudo systemctl enable httpd
 
 
