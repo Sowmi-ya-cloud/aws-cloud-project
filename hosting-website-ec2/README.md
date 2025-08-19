@@ -59,7 +59,16 @@ sudo mkdir css images
   - Create Homepage & Aboutpage
 ```
 sudo nano index.html
+
+
 sudo nano about.html
+
+<html>
+ <body>
+ <h2>About Us</h2>
+ <p>This project was deployed by cloud interns!</p>
+ </body>
+</html>
 ```
   "write your HTML code here"
 
