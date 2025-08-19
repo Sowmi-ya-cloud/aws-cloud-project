@@ -66,12 +66,12 @@
 
 ✅ DynamoDB table created with users.
 
-<img width="940" height="470" alt="image" src="https://github.com/user-attachments/assets/c6554398-b051-4638-88f5-d50168d40dd8" />
+<img width="740" height="470" alt="image" src="https://github.com/user-attachments/assets/c6554398-b051-4638-88f5-d50168d40dd8" />
 
 ✅ SNS subscription confirmed.
 
-<img width="931" height="219" alt="image" src="https://github.com/user-attachments/assets/49815ec1-0eaa-4333-8fbc-c6a354ee1c00" />
+<img width="731" height="219" alt="image" src="https://github.com/user-attachments/assets/49815ec1-0eaa-4333-8fbc-c6a354ee1c00" />
 
 ✅ Lambda triggered successfully → Email notification received.
 
-<img width="978" height="456" alt="image" src="https://github.com/user-attachments/assets/4c758c8b-5a0a-4344-b041-f2cff3f250db" />
+<img width="778" height="456" alt="image" src="https://github.com/user-attachments/assets/4c758c8b-5a0a-4344-b041-f2cff3f250db" />
