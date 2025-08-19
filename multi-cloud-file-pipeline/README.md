@@ -2,8 +2,8 @@
 
 ## 📌 Project Title & Objective
 
-Title: Multi-Cloud Serverless File Processing Pipeline  
-Objective: Learn how to create an event-driven file processing pipeline in AWS and Azure using only free-tier services, without billing risks.
+**Title:** Multi-Cloud Serverless File Processing Pipeline  
+**Objective:** Learn how to create an event-driven file processing pipeline in AWS and Azure using only free-tier services, without billing risks.
 
 ## 🏗️ Architecture Diagram
 
@@ -29,45 +29,29 @@ Objective: Learn how to create an event-driven file processing pipeline in AWS a
 - Permissions: Use default role with basic Lambda execution.
 - Click Create function.
 
-#### Step 3: Create a Lambda Function
-- Trigger: DynamoDB stream on `INSERT`.  
-- Role: Grant access to read from DynamoDB and publish to SNS.
-- Logic: When new user is added, publish a message to SNS like:
-  
-       “A new user has registered with ID: 12345”
-  
-- Code Example:
-```python
- import boto3
+#### Step 3: Add Code to Lambda
 
- sns = boto3.client('sns')
+   ```python
+   import json
 
-  def lambda_handler(event, context):
-  
-      for record in event['Records']:
+   def lambda_handler(event, context):
+       for record in event['Records']:
+           file_name = record['s3']['object']['key']
+           print(f"File uploaded: {file_name}")
+       return {
+           'statusCode': 200,
+           'body': json.dumps('File processed successfully!')
+       }
       
-          if record['eventName'] == 'INSERT':
-      
-              user_id = record['dynamodb']['Keys']['user_id']['S']
-              
-              message = f"A new user has registered with ID: {user_id}"
-              
-              sns.publish(
-              
-                  TopicArn="arn:aws:sns:REGION:ACCOUNT_ID:UserNotifyTopic",
-                  
-                  Message=message
-                  
-              )
-              
-      return {"status": "done"}
 ```
+click deploy
 
-#### Step 4: Test the System
+#### Step 4: Connect S3 trigger
 
-- Add a new item in DynamoDB (e.g., user_id: 12345).
-
-- Check your email inbox for notification.
+-  In Lambda function → Go to Configuration → Triggers → Add trigger.
+-  Select S3, choose your bucket.
+-  Event type: PUT (upload event).
+-  Save.
 
 ## 📊 Results
 
