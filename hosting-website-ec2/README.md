@@ -111,3 +111,5 @@ http://<your-public-ip>/project/index.html
 
     - Faced small issues with file permissions (fixed using sudo).
 
+    - Improved understanding of folder structure (HTML, CSS, Images).
+
