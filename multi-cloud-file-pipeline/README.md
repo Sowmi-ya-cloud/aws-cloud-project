@@ -29,7 +29,8 @@
   
        “A new user has registered with ID: 12345”
   
-- Code Example:  ```python
+- Code Example:
+```python
  import boto3
 
  sns = boto3.client('sns')
@@ -53,3 +54,9 @@
               )
               
       return {"status": "done"}
+
+####4️⃣ Test the System
+
+- Add a new item in DynamoDB (e.g., user_id: 12345).
+
+- Check your email inbox for notification.
