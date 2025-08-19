@@ -8,6 +8,9 @@
 
 ## 🏗️ Architecture Diagram
 
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/fb5b13cf-4f79-4c59-bae0-f7caf1ff3a99" />
+
+
 ## ⚙️ Steps (Implementation Guide)
 
 #### Step 1: Create a DynamoDB Table
