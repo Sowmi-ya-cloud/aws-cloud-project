@@ -27,9 +27,9 @@
 - Role: Grant access to read from DynamoDB and publish to SNS.  
 - Code Example: 
   ```python
-import boto3
+ import boto3
 
-  sns = boto3.client('sns')
+ sns = boto3.client('sns')
 
   def lambda_handler(event, context):
   
