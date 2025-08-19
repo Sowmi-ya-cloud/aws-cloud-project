@@ -83,14 +83,14 @@ sudo nano about.html
  </body>
 </html>
 ```
-  "write your HTML code here"
 
 - Add the CSS (style file)
 ```
 cd css
 sudo nano style.css
+
+
 ```
-  "write your CSS code here"
 
   - Add a Dummy image file
 ```
