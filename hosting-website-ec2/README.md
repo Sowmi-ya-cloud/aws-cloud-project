@@ -60,6 +60,8 @@ sudo mkdir css images
 ```
 sudo nano index.html
 
+```
+```
 <html>
  <head>
  <title>My First Cloud Website</title>
@@ -74,8 +76,11 @@ sudo nano index.html
  </body>
 </html>
 
+```
+```
 sudo nano about.html
-
+```
+```
 <html>
  <body>
  <h2>About Us</h2>
@@ -83,12 +88,14 @@ sudo nano about.html
  </body>
 </html>
 ```
-
+```
 - Add the CSS (style file)
+```
 ```
 cd css
 sudo nano style.css
 
+```
 body {
  background-color: lightblue;
 }
