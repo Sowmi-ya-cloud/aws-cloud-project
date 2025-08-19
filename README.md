@@ -9,7 +9,7 @@
 
 ## 🏗️ Architecture Diagram
 
-<img width="900" height="1000" alt="image" src="https://github.com/user-attachments/assets/7283f4e4-b406-4392-9be6-a8d363caffc0" />
+<img width="900" height="900" alt="image" src="https://github.com/user-attachments/assets/7283f4e4-b406-4392-9be6-a8d363caffc0" />
 
 ## ⚙️ Implementation Steps
 
