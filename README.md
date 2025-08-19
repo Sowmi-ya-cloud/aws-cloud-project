@@ -9,6 +9,7 @@
 
 ## 🏗️ Architecture Diagram
 
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/7283f4e4-b406-4392-9be6-a8d363caffc0" />
 
 
 
