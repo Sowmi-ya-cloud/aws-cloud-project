@@ -8,7 +8,7 @@
 
 ## 🏗️ Architecture Diagram
 
-<img width="836" height="824" alt="image" src="https://github.com/user-attachments/assets/fb5b13cf-4f79-4c59-bae0-f7caf1ff3a99" />
+<img width="536" height="524" alt="image" src="https://github.com/user-attachments/assets/fb5b13cf-4f79-4c59-bae0-f7caf1ff3a99" />
 
 
 ## ⚙️ Steps (Implementation Guide)
