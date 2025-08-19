@@ -102,7 +102,20 @@ click deploy
 
 #### Step 3: Create an Azure Function
 
+- Go to Azure Portal → Function App → Create.
+- Name: studentfunctionyourname.
+- Runtime stack: Python (or Node.js).
+- Hosting: Consumption Plan (always free for low usage).
+- Link it to the same Resource Group.
+- Create.
 
+#### Step 4: Add a Blob trigger function
+
+- Inside your Function App → Functions → + Add → Blob trigger.
+- Name: BlobLogger.
+- Path: files/{name}.
+- Storage account: select your account
+  
 #### Step 3: Add Code to Lambda
 
    ```python
