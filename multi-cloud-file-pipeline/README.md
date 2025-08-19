@@ -11,4 +11,10 @@
 
 ## ⚙️ Steps (Implementation Guide)
 
-### 1️⃣ Create a DynamoDB Table
+#### 1️⃣ Create a DynamoDB Table
+
+- Table Name: UserRegistrations  
+- Primary Key: user_id (String)
+- Add at least 2 sample users manually.
+
+- 
