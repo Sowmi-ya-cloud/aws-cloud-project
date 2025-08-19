@@ -83,21 +83,25 @@ click deploy
 
 ### 🟧 Part 2: Azure File Processing
 
-#### Step 1: Create an S3 Bucket
+#### Step 1: Create a Storage Account
 
- - Go to AWS Console → S3 → Create bucket.
- - Name: student-file-bucket-yourname.
- - Region: US East (N. Virginia) (to maximize free tier).
- - Leave defaults → Create bucket.
+ - Go to Azure Portal → Storage Accounts → Create.
+ - Resource Group: create a new one (e.g., FilePipelineRG).
+ - Name: studentstorageyourname.
+ - Region: East US (free tier recommended).
+ - Performance: Standard → Locally-redundant storage (LRS).
+ - Click Review + Create
      
-#### Step 2: Create a Lambda Function
+#### Step 2: Create a blob Container
 
-- Go to AWS Console → Lambda → Create function.
-- Choose Author from scratch.
-- Function name: FileLoggerLambda.
-- Runtime: Python 3.9 (or latest free option).
-- Permissions: Use default role with basic Lambda execution.
-- Click Create function.
+- Open your storage account.
+- Go to Containers → + Container.
+- Name: files.
+- Public access: Private.
+- Create.
+
+#### Step 3: Create an Azure Function
+
 
 #### Step 3: Add Code to Lambda
 
