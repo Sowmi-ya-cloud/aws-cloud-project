@@ -10,19 +10,19 @@
 
 ## ⚙️ Steps (Implementation Guide)
 
-#### 1️⃣ Create a DynamoDB Table
+#### Step 1: Create a DynamoDB Table
 
 - Table Name: UserRegistrations  
 - Primary Key: user_id (String)
 - Add at least 2 sample users manually.
 
-#### 2️⃣ Create an SNS Topic
+#### Step 2: Create an SNS Topic
 
 - Topic Name: UserNotifyTopic 
 - Add your personal email as a subscriber.  
 - Confirm subscription via email.
 
-#### 3️⃣ Create a Lambda Function
+#### Step 3: Create a Lambda Function
 - Trigger: DynamoDB stream on `INSERT`.  
 - Role: Grant access to read from DynamoDB and publish to SNS.
 - Logic: When new user is added, publish a message to SNS like:
@@ -56,7 +56,7 @@
       return {"status": "done"}
 ```
 
-#### 4️⃣ Test the System
+#### Step 4: Test the System
 
 - Add a new item in DynamoDB (e.g., user_id: 12345).
 
