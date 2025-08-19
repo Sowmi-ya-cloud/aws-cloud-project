@@ -1,5 +1,3 @@
-# cloud-mini-projects
-
 ## 📌 Project Title & Objective
 
 **Title:** Hosting a Static Website on Amazon EC2
