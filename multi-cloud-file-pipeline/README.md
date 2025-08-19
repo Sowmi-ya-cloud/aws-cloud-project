@@ -13,15 +13,13 @@
 
 #### Step 1: Create an S3 Bucket
 
- - Go to AWS Console → S3 → Create bucket.
  - Name: student-file-bucket-yourname.
  - Region: US East (N. Virginia) (to maximize free tier).
  - Leave defaults → Create bucket.
      
 #### Step 2: Create a Lambda Function
 
-- Go to AWS Console → Lambda → Create function.
-- Choose Author from scratch.
+- Create function → Choose Author from scratch.
 - Function name: FileLoggerLambda.
 - Runtime: Python 3.9 (or latest free option).
 - Permissions: Use default role with basic Lambda execution.
@@ -46,15 +44,14 @@ click deploy
 
 #### Step 4: Connect S3 trigger
 
--  In Lambda function → Go to Configuration → Triggers → Add trigger.
+-  Go to Configuration → Triggers → Add trigger.
 -  Select S3, choose your bucket.
 -  Event type: PUT (upload event).
 -  Save.
 
 #### Step 4: Test
 
-- Upload a text file (test.txt) to the S3 bucket.
-- Go to CloudWatch Logs → check the Lambda log.
+- Upload test.txt → check CloudWatch Logs.
 - You should see: File uploaded: test.txt.
 
 ## 📊 Results
@@ -94,15 +91,13 @@ click deploy
      
 #### Step 2: Create a blob Container
 
-- Open your storage account.
-- Go to Containers → + Container.
+- Open your storage account → Containers → + Container.
 - Name: files.
 - Public access: Private.
 - Create.
 
-#### Step 3: Create an Azure Function
+#### Step 3: Create an Azure Function 
 
-- Go to Azure Portal → Function App → Create.
 - Name: studentfunctionyourname.
 - Runtime stack: Python (or Node.js).
 - Hosting: Consumption Plan (always free for low usage).
