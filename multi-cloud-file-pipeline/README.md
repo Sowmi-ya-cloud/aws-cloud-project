@@ -82,3 +82,22 @@
 
 
 <img width="778" height="456" alt="image" src="https://github.com/user-attachments/assets/4c758c8b-5a0a-4344-b041-f2cff3f250db" />
+
+
+## 🧹 Cleanup Instructions
+
+- Delete Lambda function
+
+- Delete SNS topic & subscriptions
+
+- Delete DynamoDB table
+
+- Verify billing dashboard → ensure $0 usage
+
+## ✍️ Reflection
+
+- What I Learned: How DynamoDB, Lambda, and SNS integrate in a serverless workflow.
+
+- Challenges Faced: IAM permission errors for Lambda → fixed by updating role.
+
+- Possible Improvements: Extend notifications to SMS/Slack or add validation logic.
