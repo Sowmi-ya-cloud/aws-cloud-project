@@ -60,8 +60,6 @@ sudo mkdir css images
 ```
 sudo nano index.html
 
-```
-```
 <html>
  <head>
  <title>My First Cloud Website</title>
@@ -76,36 +74,36 @@ sudo nano index.html
  </body>
 </html>
 
-```
-```
 sudo nano about.html
-```
-```
+
 <html>
  <body>
  <h2>About Us</h2>
  <p>This project was deployed by cloud interns!</p>
  </body>
 </html>
+
 ```
-```
+
 - Add the CSS (style file)
-```
+
 ```
 cd css
 sudo nano style.css
 
-```
 body {
  background-color: lightblue;
 }
 ```
   - Add a Dummy image file
+
 ```
 cd ../images
 sudo touch logo.png
 ```
+
   - Go back to project folder and check structure
+
 ```
 cd ..
 ls -R
