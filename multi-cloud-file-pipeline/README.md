@@ -56,7 +56,7 @@
       return {"status": "done"}
 ```
 
-####4️⃣ Test the System
+#### 4️⃣ Test the System
 
 - Add a new item in DynamoDB (e.g., user_id: 12345).
 
