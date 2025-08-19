@@ -7,23 +7,27 @@ Objective: Learn how to create an event-driven file processing pipeline in AWS a
 
 ## 🏗️ Architecture Diagram
 
-<img width="836" height="824" alt="image" src="https://github.com/user-attachments/assets/fb5b13cf-4f79-4c59-bae0-f7caf1ff3a99" />
 
 
 ## ⚙️ Steps (Implementation Guide)
 
-### � Part 1: AWS File Processing
+### 🟧 Part 1: AWS File Processing
 
 #### Step 1: Create an S3 Bucket
 
-- Name: `student-file-bucket-yourname`  
-- Region: `us-east-1`
+ - Go to AWS Console → S3 → Create bucket.
+ - Name: student-file-bucket-yourname.
+ - Region: US East (N. Virginia) (to maximize free tier).
+ - Leave defaults → Create bucket.
      
 #### Step 2: Create a Lambda Function
 
-- Topic Name: UserNotifyTopic 
-- Add your personal email as a subscriber.  
-- Confirm subscription via email.
+- Go to AWS Console → Lambda → Create function.
+- Choose Author from scratch.
+- Function name: FileLoggerLambda.
+- Runtime: Python 3.9 (or latest free option).
+- Permissions: Use default role with basic Lambda execution.
+- Click Create function.
 
 #### Step 3: Create a Lambda Function
 - Trigger: DynamoDB stream on `INSERT`.  
