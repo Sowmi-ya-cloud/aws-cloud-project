@@ -6,7 +6,6 @@
 
 **Objective:** Build a serverless system that sends notifications when a new item is added to DynamoDB using AWS Lambda and SNS, while staying free-tier safe.
 
-
 ## 🏗️ Architecture Diagram
 
 ## ⚙️ Steps (Implementation Guide)
@@ -33,12 +32,21 @@ import boto3
   sns = boto3.client('sns')
 
   def lambda_handler(event, context):
+  
       for record in event['Records']:
+      
           if record['eventName'] == 'INSERT':
+      
               user_id = record['dynamodb']['Keys']['user_id']['S']
+              
               message = f"A new user has registered with ID: {user_id}"
+              
               sns.publish(
+              
                   TopicArn="arn:aws:sns:REGION:ACCOUNT_ID:UserNotifyTopic",
+                  
                   Message=message
+                  
               )
+              
       return {"status": "done"}
