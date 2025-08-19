@@ -2,9 +2,8 @@
 
 ## 📌 Project Title & Objective
 
-**Title:** Auto-Notify: Event-Driven Notification System  
-
-**Objective:** Build a serverless system that sends notifications when a new item is added to DynamoDB using AWS Lambda and SNS, while staying free-tier safe.
+Title: Multi-Cloud Serverless File Processing Pipeline  
+Objective: Learn how to create an event-driven file processing pipeline in AWS and Azure using only free-tier services, without billing risks.
 
 ## 🏗️ Architecture Diagram
 
@@ -13,13 +12,14 @@
 
 ## ⚙️ Steps (Implementation Guide)
 
-#### Step 1: Create a DynamoDB Table
+### � Part 1: AWS File Processing
 
-- Table Name: UserRegistrations  
-- Primary Key: user_id (String)
-- Add at least 2 sample users manually.
+#### Step 1: Create an S3 Bucket
 
-#### Step 2: Create an SNS Topic
+- Name: `student-file-bucket-yourname`  
+- Region: `us-east-1`
+     
+#### Step 2: Create a Lambda Function
 
 - Topic Name: UserNotifyTopic 
 - Add your personal email as a subscriber.  
