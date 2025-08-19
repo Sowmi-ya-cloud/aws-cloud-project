@@ -11,51 +11,35 @@
 
 ### 🟧 Part 1: AWS File Processing
 
-#### Step 1: Create a Storage Account
+#### Step 1: Create an S3 Bucket
 
- - Go to Azure Portal → Storage Accounts → Create.
- - Resource Group: create a new one (e.g., FilePipelineRG).
- - Name: studentstorageyourname.
- - Region: East US (free tier recommended).
- - Performance: Standard → Locally-redundant storage (LRS).
- - Click Review + Create.
-  
-#### Step 2: Create a Blob Container
+ - Go to AWS Console → S3 → Create bucket.
+ - Name: student-file-bucket-yourname.
+ - Region: US East (N. Virginia) (to maximize free tier).
+ - Leave defaults → Create bucket.
+     
+#### Step 2: Create a Lambda Function
 
-- Open your storage account.
-- Go to Containers → + Container.
-- Name: files.
-- Public access: Private.
-- Create.
+- Go to AWS Console → Lambda → Create function.
+- Choose Author from scratch.
+- Function name: FileLoggerLambda.
+- Runtime: Python 3.9 (or latest free option).
+- Permissions: Use default role with basic Lambda execution.
+- Click Create function.
 
-#### Step 3: Create an Azure Function
-
-- Go to Azure Portal → Function App → Create.
-- Name: studentfunctionyourname.
-- Runtime stack: Python (or Node.js).
-- Hosting: Consumption Plan (always free for low usage).
-- Link it to the same Resource Group.
-- Create.
-
-#### Step 4: Add a Blob Trigger Function
-
-- Inside your Function App → Functions → + Add → Blob trigger.
-- Name: BlobLogger.
-- Path: files/{name}.
-- Storage account: select your account.
-- 
-#### Step 5: Add Code
-
-Example python code
+#### Step 3: Add Code to Lambda
 
    ```python
-   import logging
+   import json
 
-def main(myblob: func.InputStream):
-
- logging.info(f"File uploaded: {myblob.name}, Size: {myblob.length}
-
-bytes")
+   def lambda_handler(event, context):
+       for record in event['Records']:
+           file_name = record['s3']['object']['key']
+           print(f"File uploaded: {file_name}")
+       return {
+           'statusCode': 200,
+           'body': json.dumps('File processed successfully!')
+       }
       
 ```
 click deploy
