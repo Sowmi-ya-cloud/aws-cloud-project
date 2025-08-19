@@ -60,6 +60,19 @@ sudo mkdir css images
 ```
 sudo nano index.html
 
+<html>
+ <head>
+ <title>My First Cloud Website</title>
+ <link rel="stylesheet" href="css/style.css">
+ </head>
+ <body>
+ <h1>Hello from EC2 </h1>
+ <p>This is hosted by a Cloud Intern!</p>
+ <a href="about.html">About Us</a>
+ <br>
+ <img src="images/logo.png" width="100">
+ </body>
+</html>
 
 sudo nano about.html
 
