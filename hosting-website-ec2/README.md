@@ -89,6 +89,9 @@ sudo nano about.html
 cd css
 sudo nano style.css
 
+body {
+ background-color: lightblue;
+}
 
 ```
 
