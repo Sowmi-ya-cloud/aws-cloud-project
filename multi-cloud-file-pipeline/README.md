@@ -29,8 +29,7 @@
   
        “A new user has registered with ID: 12345”
   
-- Code Example: 
-  ```python
+- Code Example:  ```python
  import boto3
 
  sns = boto3.client('sns')
