@@ -61,3 +61,11 @@
 - Add a new item in DynamoDB (e.g., user_id: 12345).
 
 - Check your email inbox for notification.
+
+## 📊 Results
+
+✅ DynamoDB table created with users.
+
+✅ SNS subscription confirmed.
+
+✅ Lambda triggered successfully → Email notification received.
