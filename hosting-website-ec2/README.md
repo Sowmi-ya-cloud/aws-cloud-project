@@ -23,7 +23,9 @@
    - Allow SSH (22) → Connect instance from terminal.  
    - Allow HTTP (80) → Public website access.
      
- 4.Click Launch Instance.  
+ 4.Click Launch Instance. 
+
+ ![WhatsApp Image 2025-08-19 at 13 17 06_fcac6f56](https://github.com/user-attachments/assets/ea3a7ec6-5294-4a4a-9d0b-c3cd1c62ecde)
 
 ### Step 2: Connect to EC2 Instance
 
