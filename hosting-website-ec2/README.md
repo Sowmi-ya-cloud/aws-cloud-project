@@ -92,9 +92,7 @@ sudo nano style.css
 body {
  background-color: lightblue;
 }
-
 ```
-
   - Add a Dummy image file
 ```
 cd ../images
