@@ -116,56 +116,51 @@ click deploy
 - Path: files/{name}.
 - Storage account: select your account
   
-#### Step 3: Add Code to Lambda
+#### Step 5: Add Code 
+
+Example Python code:
 
    ```python
-   import json
 
-   def lambda_handler(event, context):
-       for record in event['Records']:
-           file_name = record['s3']['object']['key']
-           print(f"File uploaded: {file_name}")
-       return {
-           'statusCode': 200,
-           'body': json.dumps('File processed successfully!')
-       }
-      
+ import logging
+
+def main(myblob: func.InputStream):
+
+ logging.info(f"File uploaded: {myblob.name}, Size: {myblob.length}
+
+bytes")
+
 ```
 click deploy
 
-#### Step 4: Connect S3 trigger
+#### Step 6: Test
 
--  In Lambda function → Go to Configuration → Triggers → Add trigger.
--  Select S3, choose your bucket.
--  Event type: PUT (upload event).
--  Save.
+- Upload azuretest.txt → check Monitor Logs.
 
-#### Step 4: Test
-
-- Upload a text file (test.txt) to the S3 bucket.
-- Go to CloudWatch Logs → check the Lambda log.
-- You should see: File uploaded: test.txt.
+- Expected: File uploaded: files/azuretest.txt, Size: X bytes
 
 ## 📊 Results
 
-✅ S3 Bucket created.
+✅ Storage account + Blob created.
 
-✅ Lambda function triggered on file upload.
+✅ Function App triggered correctly.
 
-✅ Log generated in CloudWatch.
+✅ Logs generated in Azure Monitor.
 
 ## 🧹 Cleanup Instructions
 
-- Delete S3 Bucket.
+- Delete Function App.
 
-- Delete Lambda Function.
+- Delete Storage Account.
 
-- Verify billing dashboard → ensure $0 usage.
+- Delete Resource Group.
+
+- Confirm $0 usage in billing dashboard.
 
 ## ✍️ Reflection
 
-- What I Learned: How S3 events can trigger Lambda in a serverless workflow.
+- What I Learned: Blob triggers automatically invoke Azure Functions.
   
-- Challenges I Faced: Setting correct S3 → Lambda trigger permissions.
+- Challenges I Faced: Linking storage account to function correctly.
 
-- Possible Improvements: Could extend Lambda to process file content (e.g., parse CSV).
+- Possible Improvements: Could extend Function to send email alerts using Logic Apps.
