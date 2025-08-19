@@ -24,7 +24,11 @@
 
 #### 3️⃣ Create a Lambda Function
 - Trigger: DynamoDB stream on `INSERT`.  
-- Role: Grant access to read from DynamoDB and publish to SNS.  
+- Role: Grant access to read from DynamoDB and publish to SNS.
+- Logic: When new user is added, publish a message to SNS like:
+  
+       “A new user has registered with ID: 12345”
+  
 - Code Example: 
   ```python
  import boto3
