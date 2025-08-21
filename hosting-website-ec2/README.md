@@ -4,10 +4,10 @@
 
 **Objective:** Deploy a simple static website (HTML, CSS, Image) on an Apache server running in an AWS EC2 instance.
 
-
 ## 🏗️ Architecture Diagram
 
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/7283f4e4-b406-4392-9be6-a8d363caffc0" />
+
 ## ⚙️ Implementation Steps
 
 ### Step 1: Launch EC2 Instance
