@@ -25,7 +25,6 @@
 
  <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/ea3a7ec6-5294-4a4a-9d0b-c3cd1c62ecde"/>
 
-
 ### Step 2: Connect to EC2 Instance
 
  1.Go to EC2 → Instances and select your instance.
@@ -33,7 +32,6 @@
  2.Click Connect → Now you are inside your EC2 server (terminal).
 
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/20e704a3-07b9-4125-90f8-a0dafd202594" />
-
 
 ### Step 3: Install Apache Web Server 
  Run these commands inside your EC2 instance:  
@@ -45,6 +43,8 @@ sudo systemctl start httpd
 sudo systemctl enable httpd
 ```
 ✅ Test by opening http://<Public-IP> → you should see Apache Test Page.
+
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/03e3c675-ed33-45d2-926a-76887a637a89" />
 
 ### Step 4: Setup Project (Folders, HTML, CSS, Images)
 
