@@ -113,6 +113,8 @@ cd ..
 ls -R
 ```
  ✅ This will show all folders and files inside your project folder.
+ 
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/9f56cbd4-6080-4e56-b6fb-aecee8f16391" />
 
  ## 📊 Results 
 
