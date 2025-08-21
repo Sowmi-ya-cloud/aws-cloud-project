@@ -23,7 +23,7 @@
      
  4.Click Launch Instance. 
 
- <img width="500" height="500" alt="image" src=" ![WhatsApp Image 2025-08-19 at 13 17 06_fcac6f56](https://github.com/user-attachments/assets/ea3a7ec6-5294-4a4a-9d0b-c3cd1c62ecde)" />
+ <img width="500" height="500" alt="image" src="![WhatsApp Image 2025-08-19 at 13 17 06_fcac6f56](https://github.com/user-attachments/assets/ea3a7ec6-5294-4a4a-9d0b-c3cd1c62ecde)"/>
 
 
 ### Step 2: Connect to EC2 Instance
