@@ -31,6 +31,9 @@
  
  2.Click Connect → Now you are inside your EC2 server (terminal).
 
+ ![WhatsApp Image 2025-08-19 at 13 22 43_d9e35aeb](https://github.com/user-attachments/assets/aaf97aca-563b-4f70-bcdc-9bf436ec0297)
+
+
 ### Step 3: Install Apache Web Server 
  Run these commands inside your EC2 instance:  
 
