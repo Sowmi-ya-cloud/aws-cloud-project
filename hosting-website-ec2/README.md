@@ -132,6 +132,9 @@ http://<your-public-ip>/project/index.html
         • About Us link
 
         • Fake image (broken logo is fine)
+
+   <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/20531909-7395-4072-ba79-cba8ae036e55" />
+
   ## 🧹 Cleanup Instructions
 
    1.After testing, stop or terminate the EC2 instance to avoid charges
