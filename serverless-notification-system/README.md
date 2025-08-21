@@ -80,7 +80,7 @@
 
 ✅ Lambda triggered successfully → Email notification received.
 
-<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/4c758c8b-5a0a-4344-b041-f2cff3f250db" />
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/ec36acf8-f8c8-4c88-8a3a-803e69e2a9c9" />
 
 ## 🧹 Cleanup Instructions
 
