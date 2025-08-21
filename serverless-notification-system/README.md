@@ -19,11 +19,15 @@
 - Primary Key: user_id (String)
 - Add at least 2 sample users manually.
 
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/c6554398-b051-4638-88f5-d50168d40dd8" />
+
 #### Step 2: Create an SNS Topic
 
 - Topic Name: UserNotifyTopic 
 - Add your personal email as a subscriber.  
 - Confirm subscription via email.
+
+<img width="500" height="499" alt="image" src="https://github.com/user-attachments/assets/ee74a05c-5f3a-4268-8a07-53f7857adfbe" />
 
 #### Step 3: Create a Lambda Function
 - Trigger: DynamoDB stream on `INSERT`.  
@@ -58,6 +62,7 @@
               
       return {"status": "done"}
 ```
+<img width="500" height="499" alt="image" src="https://github.com/user-attachments/assets/414790dd-f867-45bc-9648-0875346fa2fd" />
 
 #### Step 4: Test the System
 
@@ -69,23 +74,13 @@
 
 ✅ DynamoDB table created with users.
 
-
-<img width="740" height="470" alt="image" src="https://github.com/user-attachments/assets/c6554398-b051-4638-88f5-d50168d40dd8" />
-
-
-
 ✅ SNS subscription confirmed.
 
-
-<img width="831" height="219" alt="image" src="https://github.com/user-attachments/assets/49815ec1-0eaa-4333-8fbc-c6a354ee1c00" />
-
-
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/49815ec1-0eaa-4333-8fbc-c6a354ee1c00" />
 
 ✅ Lambda triggered successfully → Email notification received.
 
-
-<img width="778" height="456" alt="image" src="https://github.com/user-attachments/assets/4c758c8b-5a0a-4344-b041-f2cff3f250db" />
-
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/4c758c8b-5a0a-4344-b041-f2cff3f250db" />
 
 ## 🧹 Cleanup Instructions
 
