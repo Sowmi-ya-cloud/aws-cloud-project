@@ -104,7 +104,19 @@ click deploy
 - Link it to the same Resource Group.
 - Create.
 
-#### Step 4: Add a Blob trigger function
+#### Step 4: Add a Blob trigger function (VS Code)
+
+- Install:
+   .NET 6 SDK
+   Azure Functions Core Tools MSI
+   VS Code Azure Functions Extension
+- In VS Code → Ctrl+Shift+P → Azure Functions: Create New Project
+   Language: C# (.NET 6, In-process)
+   Template: Blob Trigger
+   Function name: BlobLogger
+   Path: files/{name}
+   Storage: AzureWebJobsStorage
+- Update local.settings.json with your Azure Storage connection string.
 
 - Inside your Function App → Functions → + Add → Blob trigger.
 - Name: BlobLogger.
