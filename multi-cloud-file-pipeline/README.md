@@ -116,7 +116,9 @@ click deploy
 - Path: files/{name}
 - Storage: AzureWebJobsStorage
 - Update local.settings.json with your Azure Storage connection string.
+
                        or
+  
 - Inside your Function App → Functions → + Add → Blob trigger.
 - Name: BlobLogger.
 - Path: files/{name}.
