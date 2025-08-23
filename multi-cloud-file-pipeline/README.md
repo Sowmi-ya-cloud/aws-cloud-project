@@ -72,6 +72,9 @@ click deploy
 
 ✅ Log generated in CloudWatch.
 
+<img width="436" height="424" alt="image" src="https://github.com/user-attachments/assets/23e197aa-27fb-42e1-b990-80cb8bc07f1e" />
+
+
 ## 🧹 Cleanup Instructions
 
 - Delete S3 Bucket.
