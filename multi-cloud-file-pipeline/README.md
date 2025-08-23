@@ -1,4 +1,4 @@
-## 📌 Project Title & Objective
+ ## 📌 Project Title & Objective
 
 **Title:** Multi-Cloud Serverless File Processing Pipeline  
 **Objective:** Learn how to create an event-driven file processing pipeline in AWS and Azure using only free-tier services, without billing risks.
@@ -126,34 +126,57 @@ click deploy
   
 #### Step 5: Add Code 
 
-Example Python code:
+```
+using System;
+using System.IO;
+using Microsoft.Azure.WebJobs;
+using Microsoft.Extensions.Logging;
 
-   ```python
-
- import logging
-
-def main(myblob: func.InputStream):
-
- logging.info(f"File uploaded: {myblob.name}, Size: {myblob.length}
-
-bytes")
+namespace Company.Function
+{
+    public static class BlobLogger
+    {
+        [FunctionName("BlobLogger")]
+        public static void Run(
+            [BlobTrigger("files/{name}", Connection = "AzureWebJobsStorage")] Stream myBlob,
+            string name,
+            ILogger log)
+        {
+            log.LogInformation($"File uploaded: {name}, Size: {myBlob.Length} bytes");
+        }
+    }
+}
 
 ```
 click deploy
 
 #### Step 6: Test
 
-- Upload azuretest.txt → check Monitor Logs.
+- Upload a file to the files container in your storage account.
 
-- Expected: File uploaded: files/azuretest.txt, Size: X bytes
+Expected log:
+
+File uploaded: azuretest.txt, Size: 200 bytes
+
+#### Step 7: Deploy to Azure
+
+- In VS Code, open Azure tab (left panel)
+
+- Right-click your project → Deploy to Function App
+
+- Select your existing Function App (studentfunction<yourname>)
+
+Now the Blob Trigger function is live in Azure. 🚀
 
 ## 📊 Results
 
-✅ Storage account + Blob created.
+✅ Storage account + blob container created in Azure.
 
-✅ Function App triggered correctly.
+✅ Function App created in Azure.
 
-✅ Logs generated in Azure Monitor.
+✅ Blob Trigger function created in VS Code with C# code.
+
+✅ Deployment successful → File uploads trigger logs in Function App.
 
 ## 🧹 Cleanup Instructions
 
