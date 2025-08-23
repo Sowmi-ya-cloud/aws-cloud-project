@@ -57,7 +57,7 @@ click deploy
 
 <img width="436" height="424" alt="image" src="https://github.com/user-attachments/assets/abc0c19b-5a29-47b5-9d36-884f057c6545" />
 
-#### Step 4: Test
+#### Step 5: Test
 
 - Upload test.txt → check CloudWatch Logs.
 - You should see: File uploaded: test.txt.
