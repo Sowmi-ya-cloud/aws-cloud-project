@@ -166,7 +166,7 @@ namespace Company.Function
 }
 
 ```
-<img width="436" height="424" alt="image" src="https://github.com/user-attachments/assets/37389953-c837-4106-963b-951fe6b7cc52" />
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/37389953-c837-4106-963b-951fe6b7cc52" />
 
 #### Step 6: Test
 
