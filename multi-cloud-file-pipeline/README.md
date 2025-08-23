@@ -122,8 +122,6 @@ click deploy
 - Storage: AzureWebJobsStorage
 - Update local.settings.json with your Azure Storage connection string.
 
-<img width="436" height="424" alt="image" src="https://github.com/user-attachments/assets/37389953-c837-4106-963b-951fe6b7cc52" />
-
                        or
   
 - Inside your Function App → Functions → + Add → Blob trigger.
@@ -155,7 +153,7 @@ namespace Company.Function
 }
 
 ```
-click deploy
+<img width="436" height="424" alt="image" src="https://github.com/user-attachments/assets/37389953-c837-4106-963b-951fe6b7cc52" />
 
 #### Step 6: Test
 
