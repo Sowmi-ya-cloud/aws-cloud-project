@@ -88,13 +88,17 @@ click deploy
  - Region: East US (free tier recommended).
  - Performance: Standard → Locally-redundant storage (LRS).
  - Click Review + Create
-     
+
+<img width="436" height="424" alt="image" src="https://github.com/user-attachments/assets/15ec552e-61f4-427f-a80b-c9dbcb8607c8" />
+
 #### Step 2: Create a blob Container
 
 - Open your storage account → Containers → + Container.
 - Name: files.
 - Public access: Private.
 - Create.
+
+<img width="436" height="424" alt="image" src="https://github.com/user-attachments/assets/f0d8b1d8-1ffc-4b6b-8ca6-93531974e046" />
 
 #### Step 3: Create an Azure Function 
 
@@ -103,6 +107,7 @@ click deploy
 - Hosting: Consumption Plan (always free for low usage).
 - Link it to the same Resource Group.
 - Create.
+<img width="436" height="424" alt="image" src="https://github.com/user-attachments/assets/b339a87c-9df1-4343-a168-69ed2437881c" />
 
 #### Step 4: Add a Blob trigger function (VS Code)
 
@@ -157,6 +162,8 @@ click deploy
 Expected log:
 
 File uploaded: azuretest.txt, Size: 200 bytes
+
+<img width="500 " height="500" alt="image" src="https://github.com/user-attachments/assets/b0245dfd-e0c5-435e-afc3-948c0239e4dd" />
 
 #### Step 7: Deploy to Azure
 
