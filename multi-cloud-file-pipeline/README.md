@@ -16,7 +16,9 @@
  - Name: student-file-bucket-yourname.
  - Region: US East (N. Virginia) (to maximize free tier).
  - Leave defaults → Create bucket.
-     
+
+<img width="436" height="424" alt="image" src="https://github.com/user-attachments/assets/43d2daa3-718d-488c-955a-42be7d53350b" />
+
 #### Step 2: Create a Lambda Function
 
 - Create function → Choose Author from scratch.
@@ -24,6 +26,8 @@
 - Runtime: Python 3.9 (or latest free option).
 - Permissions: Use default role with basic Lambda execution.
 - Click Create function.
+
+<img width="436" height="424" alt="image" src="https://github.com/user-attachments/assets/a90a0acd-c398-46d0-b772-5092f8b6f807" />
 
 #### Step 3: Add Code to Lambda
 
@@ -42,6 +46,8 @@
 ```
 click deploy
 
+<img width="436" height="424" alt="image" src="https://github.com/user-attachments/assets/0f70181a-6505-4d14-a9c4-8162248318c8" />
+
 #### Step 4: Connect S3 trigger
 
 -  Go to Configuration → Triggers → Add trigger.
@@ -49,10 +55,14 @@ click deploy
 -  Event type: PUT (upload event).
 -  Save.
 
+<img width="436" height="424" alt="image" src="https://github.com/user-attachments/assets/abc0c19b-5a29-47b5-9d36-884f057c6545" />
+
 #### Step 4: Test
 
 - Upload test.txt → check CloudWatch Logs.
 - You should see: File uploaded: test.txt.
+
+<img width="436" height="424" alt="image" src="https://github.com/user-attachments/assets/cde2ab21-ecbc-4a9f-b3cd-c701348f3ae7" />
 
 ## 📊 Results
 
