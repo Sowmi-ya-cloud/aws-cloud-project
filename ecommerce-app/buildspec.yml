@@ -1,1 +1,15 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "Installing zip if not available"
+      - yum install -y zip || echo "zip already installed"
+  build:
+    commands:
+      - echo "Zipping frontend folder"
+      - zip -r frontend.zip frontend
+artifacts:
+  files:
+    - frontend.zip
 
