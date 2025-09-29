@@ -5,8 +5,8 @@
  <title>Products</title>
 </head>
 <body>
- <h2>Products List</h2>
- <ul id="product-list"></ul>
+ <h2>Products</h2>
+ <ul id="product"></ul>
 
  <!-- NEW: Place Order Button -->
  <button onclick="placeOrder()">Place Order</button>
@@ -16,7 +16,7 @@
  fetch("http://54.162.93.27:3000/products")
  .then(res => res.json())
  .then(data => {
-     let list = document.getElementById("product-list");  // fixed typo
+     let list = document.getElementById("product");  // fixed typo
      data.forEach(p => {
          let item = document.createElement("li");
          item.innerHTML = `
@@ -51,3 +51,4 @@
  </script>
 </body>
 </html>
+
