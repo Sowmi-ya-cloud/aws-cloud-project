@@ -1,14 +1,14 @@
-📌 Project Title & Objective
+## 📌 Project Title & Objective
 
-Title: Cloud-Based E-Commerce Application on AWS
+**Title:** Cloud-Based E-Commerce Application on AWS
 
-Objective: Deploy a dummy e-commerce web application using AWS cloud services, integrating backend (Node.js on EC2), frontend (HTML/CSS on S3), database (DynamoDB), IAM security, serverless functions (Lambda), and CI/CD pipeline.
+**Objective:** Deploy a dummy e-commerce web application using AWS cloud services, integrating backend (Node.js on EC2), frontend (HTML/CSS on S3), database (DynamoDB), IAM security, serverless functions (Lambda), and CI/CD pipeline.
 
-🏗️ Architecture Diagram
+## 🏗️ Architecture Diagram
 
 
 
-⚙️ Implementation Steps
+## ⚙️ Implementation Steps
 Step 1: VPC & Networking
 
 Created custom VPC with public/private subnets.
