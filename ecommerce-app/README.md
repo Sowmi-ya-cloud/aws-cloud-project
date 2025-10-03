@@ -31,7 +31,7 @@
 
 ### Step 3: Frontend on S3
 
-1.Created S3 bucket with Static Website Hosting enabled.
+1. Created S3 bucket with Static Website Hosting enabled.
 
 2. Uploaded products.html, style.css.
 
