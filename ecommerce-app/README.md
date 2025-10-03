@@ -6,7 +6,7 @@
 
 ## 🏗️ Architecture Diagram
 
-<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/9105dfa9-14e3-462f-aece-9dfcc19e3f74" />
+<img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/9105dfa9-14e3-462f-aece-9dfcc19e3f74" />
 
 
 ## ⚙️ Implementation Steps
