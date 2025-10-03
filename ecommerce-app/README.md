@@ -11,58 +11,58 @@
 ## ⚙️ Implementation Steps
 ### Step 1: VPC & Networking
 
-Created custom VPC with public/private subnets.
+1. Created custom VPC with public/private subnets.
 
-Configured Internet Gateway, Route Tables, Security Groups.
+2. Configured Internet Gateway, Route Tables, Security Groups.
 
-Enabled inbound rules (22 for SSH, 80/443 for HTTP/HTTPS, 3000 for backend testing).
+3. Enabled inbound rules (22 for SSH, 80/443 for HTTP/HTTPS, 3000 for backend testing).
 
 ### Step 2: Backend on EC2
 
-Launched EC2 (t2.micro free tier) instance in public subnet.
+1. Launched EC2 (t2.micro free tier) instance in public subnet.
 
-Installed Node.js & NPM.
+2. Installed Node.js & NPM.
 
-Deployed backend (server.js) to handle /products API.
+3. Deployed backend (server.js) to handle /products API.
 
-Tested using EC2 Public IP + Port 3000.
+4. Tested using EC2 Public IP + Port 3000.
 
-curl http://<EC2-Public-IP>:3000/products
+5. curl http://<EC2-Public-IP>:3000/products
 
 ### Step 3: Frontend on S3
 
-Created S3 bucket with Static Website Hosting enabled.
+1.Created S3 bucket with Static Website Hosting enabled.
 
-Uploaded products.html, style.css.
+2. Uploaded products.html, style.css.
 
-Linked frontend to backend API (fetch() call with EC2/Lambda API URL).
+3. Linked frontend to backend API (fetch() call with EC2/Lambda API URL).
 
 ### Step 4: IAM Roles & Policies
 
-Created IAM Role for EC2 with limited S3 access (least privilege).
+1. Created IAM Role for EC2 with limited S3 access (least privilege).
 
-Attached custom policy allowing only GetObject and PutObject for project bucket.
+2. Attached custom policy allowing only GetObject and PutObject for project bucket.
 
 ### Step 5: Serverless with Lambda + API Gateway
 
-Created Lambda function (order-confirmation) to send email notification using SNS.
+1. Created Lambda function (order-confirmation) to send email notification using SNS.
 
-Integrated with API Gateway (REST API) for frontend trigger.
+2. Integrated with API Gateway (REST API) for frontend trigger.
 
-Updated frontend “Place Order” button → calls API Gateway Invoke URL.
+3. Updated frontend “Place Order” button → calls API Gateway Invoke URL.
 
-fetch("https://<api-id>.execute-api.us-east-1.amazonaws.com/default/ecommerce-app", {
-   method: "POST",
-   body: JSON.stringify({ productId: id })
-});
+    fetch("https://<api-id>.execute-api.us-east-1.amazonaws.com/default/ecommerce-app", {
+       method: "POST",
+    body: JSON.stringify({ productId: id })
+    });
 
 ### Step 6: CI/CD Pipeline
 
-Connected GitHub → CodePipeline → S3 for frontend.
+1. Connected GitHub → CodePipeline → S3 for frontend.
 
-Skipped build/test (static files).
+2. Skipped build/test (static files).
 
-Verified pipeline → GitHub push automatically updates website.
+3. Verified pipeline → GitHub push automatically updates website.
 
 ## 📊 Results
 
@@ -76,20 +76,20 @@ Verified pipeline → GitHub push automatically updates website.
 
 ## 🧹 Cleanup Instructions
 
-Stop/Terminate EC2 instance.
+1. Stop/Terminate EC2 instance.
 
-Delete Load Balancer, Auto Scaling Group, and unused EIPs.
+2. Delete Load Balancer, Auto Scaling Group, and unused EIPs.
 
-Empty & delete S3 buckets.
+3. Empty & delete S3 buckets.
 
-Delete Lambda/API Gateway if no longer needed.
+4. Delete Lambda/API Gateway if no longer needed.
 
 ## 📝 Reflection
 
-Learned how different AWS services connect in a real project.
+1. Learned how different AWS services connect in a real project.
 
-Understood IAM Least Privilege principle.
+2. Understood IAM Least Privilege principle.
 
-Gained hands-on practice with VPC, EC2, S3, IAM, Lambda, API Gateway, CodePipeline.
+3. Gained hands-on practice with VPC, EC2, S3, IAM, Lambda, API Gateway, CodePipeline.
 
-Practiced cost optimization (free tier + cleanup).
+4. Practiced cost optimization (free tier + cleanup).
