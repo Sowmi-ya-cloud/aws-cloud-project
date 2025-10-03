@@ -67,8 +67,11 @@ Verified pipeline → GitHub push automatically updates website.
 ## 📊 Results
 
 ✅ Backend: Accessible at EC2 Public IP:3000 → returns product JSON.
+
 ✅ Frontend: Loads from S3 static hosting → shows product list.
+
 ✅ Order Flow: Clicking Place Order → triggers Lambda → sends confirmation email.
+
 ✅ CI/CD: Any GitHub update → reflected on S3 site automatically.
 
 ## 🧹 Cleanup Instructions
