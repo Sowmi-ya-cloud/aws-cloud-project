@@ -68,7 +68,7 @@
     <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/130e36b3-3253-41c5-9367-2924e6085138" />
 
 
-### Step 5: Serverless with Lambda + API Gateway
+### Step 4: Serverless with Lambda + API Gateway
 
 1. Created Lambda function (order-confirmation) to send email notification using SNS.
 
@@ -84,7 +84,7 @@
     body: JSON.stringify({ productId: id })
     });
 
-### Step 6: CI/CD Pipeline
+### Step 5: CI/CD Pipeline
 
 1. Connected GitHub → CodePipeline → S3 for frontend.
 
@@ -94,17 +94,53 @@
 
     <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/b387d191-65fc-4c57-9050-a66672113401" />
 
-### step 7: Scaling and Automation
+### step 6: Scaling and Automation
 
 1. Load Balancer:
 
-     • Configured an Application Load Balancer (ALB) to distribute traffic evenly across EC2 instances.
+   •  Configured an Application Load Balancer (ALB) to distribute traffic evenly across EC2 instances.
+
+      <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/528e2af4-5be5-4225-8687-bb5842315083" />
+
+   •  Created a Target Group (TG) and registered the EC2 instance.
    
-     • Created a Target Group (TG) and registered the EC2 instance.
+   •  Deleted ALB and TG after testing to avoid extra billing.
+
+2. Auto Scaling Group:
+
+   •  Created a Launch Template using EC2 configuration.
+
+      <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/038a4a63-1d63-4eae-9042-5998e7c1e14d" />
+
+   •  Verified new instances launch automatically under high load.
    
-     • Deleted ALB and TG after testing to avoid extra billing.
+   •  Deleted ASG after screenshots to stay within free tier.
+
+3.CI/CD:
+
+  •	 Linked GitHub repository with AWS CodePipeline.
+  
+  •	 Built a CI/CD pipeline using CodePipeline and CodeBuild, automatically deploying updates from the GitHub repository whenever new  commits were pushed.
+
+  <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/2c58859c-10b9-4f81-9cbc-a07d984c28ed" />
+
+4.CDN:
+
+  •	 Enabled Amazon CloudFront (CDN) for the S3 static website to reduce latency and deliver content efficiently across global edge locations.
+
+   <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/ecda1e05-497c-4413-a645-773bd9867b9b" />
 
 ### step 8: Monitoring
+
+1.CloudWatch:
+
+  •  Configured CloudWatch Metrics and Alarms to monitor EC2 performance, CPU utilization, and network traffic.
+
+2.Billing Alerts: 
+
+  •  Configured Billing Alerts to receive email notifications when cost exceeded predefined limits.
+
+   <img width="701" height="322" alt="image" src="https://github.com/user-attachments/assets/2833c257-6dbb-44c1-a22f-1de63637235c" />
 
 ### step 9: Security
 
