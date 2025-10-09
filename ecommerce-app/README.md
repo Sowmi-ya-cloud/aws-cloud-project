@@ -33,15 +33,21 @@
    sudo yum update -y
    sudo yum install nodejs -y
    npm install
+   nano server.js
+   nano products.json
+   nano package.json
+   node server.js
 
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/3b01d074-b855-413e-99a9-22d6166ab720" />
 
 3. Deployed backend (server.js) to handle /products API.
-   
 
 5. Tested using EC2 Public IP + Port 3000.
 
 6. curl http://<EC2-Public-IP>:3000/products
+
+<img width="703" height="134" alt="image" src="https://github.com/user-attachments/assets/fa59e64b-47e3-48c9-bd06-3ca4bf14681b" />
+
 
 ### Step 3: Frontend on S3
 
