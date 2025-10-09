@@ -14,6 +14,9 @@
 
 1. Created custom VPC with public/private subnets.
 
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/9c746cdf-0717-437c-91e6-c20a0ba2915e" />
+
+
 2. Configured Internet Gateway, Route Tables, Security Groups.
 
 3. Enabled inbound rules (22 for SSH, 80/443 for HTTP/HTTPS, 3000 for backend testing).
@@ -22,13 +25,23 @@
 
 1. Launched EC2 (t2.micro free tier) instance in public subnet.
 
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/45290555-de7a-4690-8297-e639bfe5e470" />
+
+
 2. Installed Node.js & NPM.
 
+   sudo yum update -y
+   sudo yum install nodejs -y
+   npm install
+
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/3b01d074-b855-413e-99a9-22d6166ab720" />
+
 3. Deployed backend (server.js) to handle /products API.
+   
 
-4. Tested using EC2 Public IP + Port 3000.
+5. Tested using EC2 Public IP + Port 3000.
 
-5. curl http://<EC2-Public-IP>:3000/products
+6. curl http://<EC2-Public-IP>:3000/products
 
 ### Step 3: Frontend on S3
 
