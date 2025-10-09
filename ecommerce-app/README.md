@@ -96,12 +96,13 @@
 
 ### step 7: Scaling and Automation
 
-1. Load Balancer -
+1. Load Balancer:
 
-   - Configured an Application Load Balancer (ALB) to distribute traffic evenly across EC2 instances. 
-   - Created a Target Group (TG) and registered the EC2 instance. 
-   - Deleted ALB and TG after testing to avoid extra billing.
-
+     • Configured an Application Load Balancer (ALB) to distribute traffic evenly across EC2 instances.
+   
+     • Created a Target Group (TG) and registered the EC2 instance.
+   
+     • Deleted ALB and TG after testing to avoid extra billing.
 
 ### step 8: Monitoring
 
