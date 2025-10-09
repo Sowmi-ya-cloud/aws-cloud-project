@@ -10,7 +10,7 @@
 
 
 ## ⚙️ Implementation Steps
-### Step 1: VPC & Networking
+### Step 1: Networking
 
 1. Created custom VPC with public/private subnets.
 
@@ -59,14 +59,6 @@
 
 3. Linked frontend to backend API (fetch() call with EC2/Lambda API URL).
 
-### Step 4: IAM Roles & Policies
-
-1. Created IAM Role for EC2 with limited S3 access (least privilege).
-
-2. Attached custom policy allowing only GetObject and PutObject for project bucket.
-
-    <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/130e36b3-3253-41c5-9367-2924e6085138" />
-
 
 ### Step 4: Serverless with Lambda + API Gateway
 
@@ -84,17 +76,7 @@
     body: JSON.stringify({ productId: id })
     });
 
-### Step 5: CI/CD Pipeline
-
-1. Connected GitHub → CodePipeline → S3 for frontend.
-
-2. Skipped build/test (static files).
-
-3. Verified pipeline → GitHub push automatically updates website.
-
-    <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/b387d191-65fc-4c57-9050-a66672113401" />
-
-### step 6: Scaling and Automation
+### step 5: Scaling and Automation
 
 1. Load Balancer:
 
@@ -118,9 +100,11 @@
 
 3.CI/CD:
 
-  •	 Linked GitHub repository with AWS CodePipeline.
-  
-  •	 Built a CI/CD pipeline using CodePipeline and CodeBuild, automatically deploying updates from the GitHub repository whenever new  commits were pushed.
+   •  Connected GitHub → CodePipeline → S3 for frontend.
+   
+   •  Skipped build/test (static files).
+   
+   •  Verified pipeline → GitHub push automatically updates website.
 
   <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/2c58859c-10b9-4f81-9cbc-a07d984c28ed" />
 
@@ -130,7 +114,7 @@
 
    <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/ecda1e05-497c-4413-a645-773bd9867b9b" />
 
-### step 8: Monitoring
+### step 6: Monitoring
 
 1.CloudWatch:
 
@@ -140,10 +124,17 @@
 
   •  Configured Billing Alerts to receive email notifications when cost exceeded predefined limits.
 
-   <img width="701" height="322" alt="image" src="https://github.com/user-attachments/assets/2833c257-6dbb-44c1-a22f-1de63637235c" />
+   <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/2833c257-6dbb-44c1-a22f-1de63637235c" />
 
-### step 9: Security
+### step 7: Security
 
+1.IAM Roles & Policies:
+
+  •  Created IAM Role for EC2 with limited S3 access (least privilege).
+
+  •  Attached custom policy allowing only GetObject and PutObject for project bucket.
+
+  <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/130e36b3-3253-41c5-9367-2924e6085138" />
 
 ## 📊 Results
 
@@ -152,6 +143,14 @@
 ✅ Frontend: Loads from S3 static hosting → shows product list.
 
 ✅ Order Flow: Clicking Place Order → triggers Lambda → sends confirmation email.
+
+  <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/854b7838-6c41-4b83-a1be-91d58b8f5a03" />
+  
+
+  <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/9ee25728-4379-4fad-acb9-edf24f5aff50" />
+
+  
+  <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/3d4471a4-c748-45f0-8cb9-058b6730a6f2" />
 
 ✅ CI/CD: Any GitHub update → reflected on S3 site automatically.
 
