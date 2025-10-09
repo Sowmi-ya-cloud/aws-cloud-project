@@ -43,7 +43,7 @@
 
 3. Deployed backend (server.js) to handle /products API.
 
-    ✅ Test by opening http://<Public-IP>:3000/products
+    ✅ Test by opening http://Public-IP:3000/products
 
    <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/fa59e64b-47e3-48c9-bd06-3ca4bf14681b" />
 
