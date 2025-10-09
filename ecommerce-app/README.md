@@ -29,7 +29,7 @@
 
 2. Installed Node.js & NPM.
 
-```bash
+   ```bash
    sudo yum update -y
    sudo yum install nodejs -y
    npm install
@@ -37,14 +37,15 @@
    nano products.json
    nano package.json
    node server.js
-```
+    ```
    <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/3b01d074-b855-413e-99a9-22d6166ab720" />
+
 
 3. Deployed backend (server.js) to handle /products API.
 
-✅ Test by opening http://<Public-IP>:3000/products
+    ✅ Test by opening http://<Public-IP>:3000/products
 
-   <img width="703" height="134" alt="image" src="https://github.com/user-attachments/assets/fa59e64b-47e3-48c9-bd06-3ca4bf14681b" />
+   <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/fa59e64b-47e3-48c9-bd06-3ca4bf14681b" />
 
 
 ### Step 3: Frontend on S3
@@ -52,6 +53,9 @@
 1. Created S3 bucket with Static Website Hosting enabled.
 
 2. Uploaded products.html, style.css.
+
+   <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/4934dc82-554a-4565-a44d-5f1a538cd23f" />
+
 
 3. Linked frontend to backend API (fetch() call with EC2/Lambda API URL).
 
@@ -61,11 +65,17 @@
 
 2. Attached custom policy allowing only GetObject and PutObject for project bucket.
 
+    <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/130e36b3-3253-41c5-9367-2924e6085138" />
+
+
 ### Step 5: Serverless with Lambda + API Gateway
 
 1. Created Lambda function (order-confirmation) to send email notification using SNS.
 
 2. Integrated with API Gateway (REST API) for frontend trigger.
+
+   <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/02e71714-a01c-459c-a4c3-bd2fc379e7c0" />
+
 
 3. Updated frontend “Place Order” button → calls API Gateway Invoke URL.
 
@@ -81,6 +91,22 @@
 2. Skipped build/test (static files).
 
 3. Verified pipeline → GitHub push automatically updates website.
+
+    <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/b387d191-65fc-4c57-9050-a66672113401" />
+
+### step 7: Scaling and Automation
+
+1. Load Balancer -
+
+   - Configured an Application Load Balancer (ALB) to distribute traffic evenly across EC2 instances. 
+   - Created a Target Group (TG) and registered the EC2 instance. 
+   - Deleted ALB and TG after testing to avoid extra billing.
+
+
+### step 8: Monitoring
+
+### step 9: Security
+
 
 ## 📊 Results
 
