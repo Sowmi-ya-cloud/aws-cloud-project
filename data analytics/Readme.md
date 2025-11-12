@@ -40,10 +40,10 @@ df.describe()
 
 ### Step 2: Data Cleaning
 
-✅ Removed Duplicate values
- Used the drop_duplicates() function to ensure that all rows in the dataset were unique and   no repeated entries were present.
+✅ ####Removed Duplicate values
+    Used the drop_duplicates() function to ensure that all rows in the dataset were unique and   no repeated entries were present.
  
-✅ Handled Missing Values
+✅ ####Handled Missing Values
 Checked for missing values using isnull().sum().
 Used dropna() to remove province/state column. (to remove unnecessary null rows).
 
