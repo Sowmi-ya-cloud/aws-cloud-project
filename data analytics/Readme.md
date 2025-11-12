@@ -8,6 +8,8 @@
 
 ## 🏗️ Architecture Diagram
 
+
+
 ## ⚙ Implementation steps
 
 ### Step 1: Dataset Collection & Upload
@@ -42,7 +44,7 @@ df.describe()
 
 ✅ Removed Duplicate values
 
-    Used the drop_duplicates() function to ensure that all rows in the dataset were unique and   no repeated entries were present.
+Used the drop_duplicates() function to ensure that all rows in the dataset were unique and   no repeated entries were present.
  
 ✅ Handled Missing Values
 
