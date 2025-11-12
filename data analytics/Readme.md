@@ -147,7 +147,9 @@ The dashboard contains:
 
 <img width="881" height="213" alt="image" src="https://github.com/user-attachments/assets/db514425-ea2f-4d41-bc84-40873aaa8ab0" />
 
-<img width="894" height="351" alt="image" src="https://github.com/user-attachments/assets/c3a7996e-7263-4336-ac71-4dca2d54f5e3" />
+### Trend Analysis
+
+<img width="694" height="351" alt="image" src="https://github.com/user-attachments/assets/c3a7996e-7263-4336-ac71-4dca2d54f5e3" />
 
 
 ✅ Insights
@@ -180,9 +182,6 @@ The dashboard contains:
   
   •	Learned how to create a clean and meaningful analytics Power BI dashboard.
 
-## Conclusion
-
-This project helped me gain real-time experience in managing data analytics workflows on the cloud. I successfully built an end-to-end pipeline that included data storage, cleaning, analysis, visualization, and reporting. The project strengthened both my data analytics and cloud computing skills, preparing me for real-world industry projects.
 
 
 
