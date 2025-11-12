@@ -162,25 +162,25 @@ The dashboard contains:
 
 •	Confirmed vs Deaths (0.91) - strong positive relationship. More cases resulted in more deaths.
 
-## Challenges Faced
+## 📝 Challenges Faced
 
 ✅ Understanding Correlation Meaning
 
-     •	At first, it was confusing to interpret the correlation values.
-     •	I took time to learn that higher positive values mean strong relationships.
+•	At first, it was confusing to interpret the correlation values.
+•	I took time to learn that higher positive values mean strong relationships.
      
 ✅ Power BI dashboard creation:
 
-     •	I faced some confusion while designing the dashboard, especially in choosing the right colours and deciding where each chart should be placed.
-     •	To overcome this, I looked at a few sample dashboards. This helped me understand how to arrange the visuals in a clean and logical flow.
+•	I faced some confusion while designing the dashboard, especially in choosing the right colours and deciding where each chart should be placed.
+•	To overcome this, I looked at a few sample dashboards. This helped me understand how to arrange the visuals in a clean and logical flow.
 
 ## ✍️ Reflection
 
-  •	Understood cloud storage and dataset versioning using AWS S3.
+•	Understood cloud storage and dataset versioning using AWS S3.
   
-  •	Became confident with Pandas, NumPy, Matplotlib and Seaborn.
+•	Became confident with Pandas, NumPy, Matplotlib and Seaborn.
   
-  •	Learned how to create a clean and meaningful analytics Power BI dashboard.
+•	Learned how to create a clean and meaningful analytics Power BI dashboard.
 
 
 
