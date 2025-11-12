@@ -121,35 +121,35 @@ The dashboard contains:
 
 ### Inspect data
 
-<img width="867" height="183" alt="image" src="https://github.com/user-attachments/assets/c703782c-dabf-4537-801f-e9787a3c2b37" />
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/c703782c-dabf-4537-801f-e9787a3c2b37" />
 
-<img width="892" height="261" alt="image" src="https://github.com/user-attachments/assets/2cf2203a-222b-4ead-8e77-d1e8da9dfd00" />
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/2cf2203a-222b-4ead-8e77-d1e8da9dfd00" />
 
-<img width="886" height="63" alt="image" src="https://github.com/user-attachments/assets/074e2d0c-52ee-4be1-b915-bd3ea2217abe" />
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/074e2d0c-52ee-4be1-b915-bd3ea2217abe" />
 
-<img width="890" height="258" alt="image" src="https://github.com/user-attachments/assets/6b44b088-d5f9-4f67-a2ee-d1edabfe7bf7" />
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/6b44b088-d5f9-4f67-a2ee-d1edabfe7bf7" />
 
 ### Checked duplicates
 
-<img width="898" height="81" alt="image" src="https://github.com/user-attachments/assets/adeec178-6758-4c37-ad06-b9e0a67224dd" />
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/adeec178-6758-4c37-ad06-b9e0a67224dd" />
 
 ### Finding missing values
 
-<img width="894" height="329" alt="image" src="https://github.com/user-attachments/assets/f64ef1e6-9f33-469e-954a-e43b34329f35" />
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/f64ef1e6-9f33-469e-954a-e43b34329f35" />
 
 ### Replaced column name
 
-<img width="869" height="46" alt="image" src="https://github.com/user-attachments/assets/9896a0c5-8efd-49de-8c6c-f5eb5c94d4b6" />
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/9896a0c5-8efd-49de-8c6c-f5eb5c94d4b6" />
 
 ### EDA
 
-<img width="892" height="344" alt="image" src="https://github.com/user-attachments/assets/73622327-8d2f-4f50-ac4f-5f8c8ad6d76a" />
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/73622327-8d2f-4f50-ac4f-5f8c8ad6d76a" />
 
-<img width="881" height="213" alt="image" src="https://github.com/user-attachments/assets/db514425-ea2f-4d41-bc84-40873aaa8ab0" />
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/db514425-ea2f-4d41-bc84-40873aaa8ab0" />
 
 ### Trend Analysis
 
-<img width="694" height="351" alt="image" src="https://github.com/user-attachments/assets/c3a7996e-7263-4336-ac71-4dca2d54f5e3" />
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/c3a7996e-7263-4336-ac71-4dca2d54f5e3" />
 
 
 ✅ Insights
