@@ -39,3 +39,4 @@ df.describe()
 ### Step 2: Data Cleaning
 
 
+✅ Test by opening http://<Public-IP> → you should see Apache Test Page.
