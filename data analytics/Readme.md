@@ -40,14 +40,17 @@ df.describe()
 
 ### Step 2: Data Cleaning
 
-✅ ####Removed Duplicate values
+✅ Removed Duplicate values
+
     Used the drop_duplicates() function to ensure that all rows in the dataset were unique and   no repeated entries were present.
  
-✅ ####Handled Missing Values
+✅ Handled Missing Values
+
 Checked for missing values using isnull().sum().
 Used dropna() to remove province/state column. (to remove unnecessary null rows).
 
 ✅ Renamed Columns
+
 The “Lat” and “Long” column was renamed to “Latitude” and “Longitude” using rename() function to make column names clear and consistent.
 
 ```bash
@@ -61,9 +64,12 @@ df.rename(columns = {"Lat" : "Latitude","Long" : "Longitude"}, inplace=True) # r
 ### Step 3: Exploratory Data Analysis (EDA)
 
 ✅ Calculated Statistical Measures
+
    Used the following functions to understand the data distribution:
+   
      •	Mean: df.mean()
      •	Median: df.median()
      •	Mode: df.mode()
      •	Standard Deviation: df.std()
+     
    These helped identify the central values and how widely the data is spread.
