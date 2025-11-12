@@ -8,7 +8,7 @@
 
 ## 🏗️ Architecture Diagram
 
-## Implementation steps
+## ⚙ Implementation steps
 
 ### Step 1: Dataset Collection & Upload
 
@@ -73,3 +73,42 @@ df.rename(columns = {"Lat" : "Latitude","Long" : "Longitude"}, inplace=True) # r
      •	Standard Deviation: df.std()
      
    These helped identify the central values and how widely the data is spread.
+
+ ✅ Trend / Pattern Analysis
+ 
+ Formatted date column
+    •	Converted the Date column using pd.to_datetime(). Then used groupby ('Date') to observe how confirmed cases changed over time.
+
+ ✅ Correlation Analysis
+
+   •	Used df.corr() to study the relationship between numerical columns such as Confirmed, Recovered, and Deaths.
+   •	Result showed a strong positive correlation between Confirmed Cases and Deaths, meaning countries with higher confirmed cases   generally reported higher deaths.
+
+```bash
+Python code:
+print("Mean:\n", df.mean(numeric_only=True), "\n")                        # Mean
+print("Median:\n", df.median(numeric_only=True), "\n")                 # Median
+print("Mode:\n", df.mode().iloc[0], "\n")                                           # Mode 
+print("Standard Deviation:\n", df.std(numeric_only=True), "\n")     # Standard Deviation
+
+df['Date'] = pd.to_datetime(df['Date'])                                             # convert to datetime
+df_sorted = df.sort_values('Date')                                                     # Sort by date
+trend = df_sorted.groupby('Date')['Confirmed'].sum()                     # Check trend 
+
+corr = df.corr(numeric_only=True)                     # Correlation between numeric columns
+print(corr)
+```
+### Step 4: Visualization Using Power BI
+
+The dashboard contains:
+  •	Bar chart: Shows Confirmed cases by Country
+  •	Line graph: Shows Spread trend by month
+  •	Pie chart: Shows Death share by regions
+  •	KPI Cards: Shows Total Confirmed, Total Recovered, Total Deaths.
+
+ <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/f7cb054f-04f1-4461-8de7-21d0f6b751a2" />
+
+### 6 Results(screenshots) & Insights
+
+
+
