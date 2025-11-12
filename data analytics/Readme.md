@@ -88,21 +88,22 @@ df.rename(columns = {"Lat" : "Latitude","Long" : "Longitude"}, inplace=True) # r
 
 ```bash
 Python code:
-print("Mean:\n", df.mean(numeric_only=True), "\n")                        # Mean
-print("Median:\n", df.median(numeric_only=True), "\n")                 # Median
-print("Mode:\n", df.mode().iloc[0], "\n")                                           # Mode 
+print("Mean:\n", df.mean(numeric_only=True), "\n")                  # Mean
+print("Median:\n", df.median(numeric_only=True), "\n")              # Median
+print("Mode:\n", df.mode().iloc[0], "\n")                           # Mode 
 print("Standard Deviation:\n", df.std(numeric_only=True), "\n")     # Standard Deviation
 
-df['Date'] = pd.to_datetime(df['Date'])                                             # convert to datetime
-df_sorted = df.sort_values('Date')                                                     # Sort by date
-trend = df_sorted.groupby('Date')['Confirmed'].sum()                     # Check trend 
+df['Date'] = pd.to_datetime(df['Date'])                             # convert to datetime
+df_sorted = df.sort_values('Date')                                  # Sort by date
+trend = df_sorted.groupby('Date')['Confirmed'].sum()                # Check trend 
 
-corr = df.corr(numeric_only=True)                     # Correlation between numeric columns
+corr = df.corr(numeric_only=True)                                   # Correlation between numeric columns
 print(corr)
 ```
 ### Step 4: Visualization Using Power BI
 
 The dashboard contains:
+
   •	Bar chart: Shows Confirmed cases by Country
   •	Line graph: Shows Spread trend by month
   •	Pie chart: Shows Death share by regions
@@ -110,7 +111,8 @@ The dashboard contains:
 
  <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/f7cb054f-04f1-4461-8de7-21d0f6b751a2" />
 
-### 6 Results(screenshots) & Insights
+## 📊 Results(screenshots) & Insights
 
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/7ae08692-52d4-4db8-bba5-337ad76ef06f" />
 
 
