@@ -17,21 +17,25 @@
  •	Purpose:
    To analyze COVID-19 spread trends and observe patterns between countries over time.
  
- •	Columns in dataset:
-
- Column Name	Type	Description
-Country/Region	String	Country name
-Lat	Float	Latitude coordinate of the country
-Long	Float	Longitude coordinate of the country
-Date	Date	Record date
-Confirmed	Integer	Total confirmed cases till date
-Deaths	Integer	Total deaths till date
-Recovered	Integer	Total recovered cases till date
-Active	Integer	Active cases on that date
-WHO Region	String	WHO region name
+ •	Uploaded dataset to an AWS S3 bucket under /raw_data/.
  
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/5d3f0b8b-2057-4734-a004-4448dcb32b6c" />
+
+`Python code: 
+
+from google.colab import files                           # Upload dataset 
+uploaded = files.upload()
+
+import pandas as pd                                      # Import libraries 
+import numpy as np
+
+df = pd.read_csv("covid_19_clean_complete.csv")          # Load dataset 
+
+df.head()                                                # Inspect data
+df.info()
+df.shape`
+df.describe()
+
+### Step 2: Data Cleaning
 
 
-<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/20e704a3-07b9-4125-90f8-a0dafd202594" />
-
-### Step 3: Install Apache Web Server 
