@@ -113,7 +113,13 @@ The dashboard contains:
 
 ## 📊 Results(screenshots) & Insights
 
+### ✅ Screenshots
+
+### Libraries imported
+
 <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/7ae08692-52d4-4db8-bba5-337ad76ef06f" />
+
+### Inspect data
 
 <img width="867" height="183" alt="image" src="https://github.com/user-attachments/assets/c703782c-dabf-4537-801f-e9787a3c2b37" />
 
@@ -123,11 +129,19 @@ The dashboard contains:
 
 <img width="890" height="258" alt="image" src="https://github.com/user-attachments/assets/6b44b088-d5f9-4f67-a2ee-d1edabfe7bf7" />
 
+### Checked duplicates
+
 <img width="898" height="81" alt="image" src="https://github.com/user-attachments/assets/adeec178-6758-4c37-ad06-b9e0a67224dd" />
+
+### Finding missing values
 
 <img width="894" height="329" alt="image" src="https://github.com/user-attachments/assets/f64ef1e6-9f33-469e-954a-e43b34329f35" />
 
+### Replaced column name
+
 <img width="869" height="46" alt="image" src="https://github.com/user-attachments/assets/9896a0c5-8efd-49de-8c6c-f5eb5c94d4b6" />
+
+### EDA
 
 <img width="892" height="344" alt="image" src="https://github.com/user-attachments/assets/73622327-8d2f-4f50-ac4f-5f8c8ad6d76a" />
 
@@ -139,23 +153,31 @@ The dashboard contains:
 ✅ Insights
 
 •	Median deaths are just 2, but average is around 884. So, most regions had very low deaths.
+
 •	The dataset covers many different global regions because the latitude and longitude values spread widely.
+
 •	The most commonly repeated region in the dataset belongs to China, which makes sense because initial COVID reporting started there.
+
 •	Confirmed vs Deaths (0.91) - strong positive relationship. More cases resulted in more deaths.
 
 ## Challenges Faced
 
 ✅ Understanding Correlation Meaning
+
      •	At first, it was confusing to interpret the correlation values.
      •	I took time to learn that higher positive values mean strong relationships.
+     
 ✅ Power BI dashboard creation:
+
      •	I faced some confusion while designing the dashboard, especially in choosing the right colours and deciding where each chart should be placed.
      •	To overcome this, I looked at a few sample dashboards. This helped me understand how to arrange the visuals in a clean and logical flow.
 
-## Learning Outcomes
+## ✍️ Reflection
 
   •	Understood cloud storage and dataset versioning using AWS S3.
+  
   •	Became confident with Pandas, NumPy, Matplotlib and Seaborn.
+  
   •	Learned how to create a clean and meaningful analytics Power BI dashboard.
 
 ## Conclusion
