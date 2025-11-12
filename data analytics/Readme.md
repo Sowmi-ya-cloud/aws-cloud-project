@@ -167,11 +167,13 @@ The dashboard contains:
 ✅ Understanding Correlation Meaning
 
 •	At first, it was confusing to interpret the correlation values.
+
 •	I took time to learn that higher positive values mean strong relationships.
      
 ✅ Power BI dashboard creation:
 
 •	I faced some confusion while designing the dashboard, especially in choosing the right colours and deciding where each chart should be placed.
+
 •	To overcome this, I looked at a few sample dashboards. This helped me understand how to arrange the visuals in a clean and logical flow.
 
 ## ✍️ Reflection
